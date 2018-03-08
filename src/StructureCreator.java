@@ -131,7 +131,7 @@ class StructureCreator
    {
       String file = tempName.substring(tempName.lastIndexOf("/"));
 
-      return file.substring(file.indexOf(".")); // returns in format of ".zip" or ".tar.gz"
+      return file.substring(file.lastIndexOf(".")); // returns in format of ".png" or ".docx"
    }
 
    /**

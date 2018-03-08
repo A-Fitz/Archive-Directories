@@ -76,7 +76,7 @@ class Main
       String fileName = selectedFile.getAbsolutePath();
       String file = fileName.substring(fileName.lastIndexOf(File.separator));
 
-      return file.substring(file.indexOf(".")); // returns in format of ".zip" or ".tar.gz"
+      return file.substring(file.lastIndexOf(".")); // returns in format of ".zip" or ".tar.gz"
    }
 
 
