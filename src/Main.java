@@ -74,7 +74,7 @@ class Main
    private static String getExtension(File selectedFile)
    {
       String fileName = selectedFile.getAbsolutePath();
-      String file = fileName.substring(fileName.lastIndexOf("/"));
+      String file = fileName.substring(fileName.lastIndexOf(File.separator));
 
       return file.substring(file.indexOf(".")); // returns in format of ".zip" or ".tar.gz"
    }
