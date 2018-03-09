@@ -110,6 +110,19 @@ class StructureCreator
          }
       }
 
+      // This loops through each unique extension and appends the number of times it occurs in the file to the list
+      int counter;
+      for(int i = 0; i < temp.size(); i++)
+      {
+         counter = 0;
+         for(String l : extensions)
+         {
+            if(temp.get(i).equals(l))
+               counter++;
+         }
+         temp.set(i, temp.get(i) + " = " + counter);
+      }
+
       createFile(false); // Creates the extension text file
 
       // Writes each part of the unique extension list
